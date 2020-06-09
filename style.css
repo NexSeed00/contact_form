@@ -18,15 +18,40 @@ form {
     border: 1px solid purple;
     padding: 2.2em 1.5em;
 }
+@media screen and (min-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
 h1 {
     margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+    h1 {
+        color: red;
+        text-align: center;
+    }
 }
 .comment {
     margin-bottom: 30px;
 }
+@media screen and (min-width: 600px) {
+    .comment {
+        
+        text-align: center;
+    }
+}
 dl {
     margin-bottom: 19px;
     width: 100%;
+}
+@media screen and (min-width: 600px) {
+    dl {
+        display: flex;
+        align-items: center;
+    }
+    
 }
 dt {
     font-size: 18px;
@@ -34,6 +59,14 @@ dt {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+@media screen and (min-width: 600px) {
+    dt {
+        width: 30%;
+        /* float: right; */
+        /* margin-left: auto; */
+        margin-bottom: 0;
+    }
 }
 dt > span {
     font-size: 10px;
@@ -56,6 +89,11 @@ input, textarea {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+}
+@media screen and (min-width: 600px) {
+    .radio-items {
+        display: flex;
+    }
 }
 .radio-item > input, .checkbox-item > input, .agreement > input {
     width: 2em;
